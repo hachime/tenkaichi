@@ -2,8 +2,7 @@
 
 Mentionne les joueurs passé en paramètres pour le podium après une session
 
-Commande
-
+Commande :
 !e $user $user $user $user $user $user $user $user $user $user $user 
 
 Todo: ajoutez la mention @joueur ou autre
