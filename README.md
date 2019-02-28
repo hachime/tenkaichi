@@ -1,4 +1,4 @@
-# tenkaichi bot for LBDF
+# Tenkaichi bot - LBDF eSport
 
 Mentionne les joueurs passé en paramètres pour le podium après une session
 
