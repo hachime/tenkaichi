@@ -20,6 +20,9 @@ bot.on('ready', function (evt) {
   logger.info('Connected');
   logger.info('Logged in as: ');
   logger.info(bot.username + ' - (' + bot.id + ')');
+  var date = new Date();
+  date = date.getDate() + '/' + (date.getMonth() + 2) + '/' + date.getFullYear();
+  logger.info(date);
 });
 
 bot.on('message', function (user, userID, channelID, message, evt) {
