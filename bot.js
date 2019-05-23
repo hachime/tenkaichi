@@ -20,20 +20,16 @@ bot.on('ready', function (evt) {
   logger.info('Connected');
   logger.info('Logged in as: ');
   logger.info(bot.username + ' - (' + bot.id + ')');
-  var date = new Date();
-  date = date.getDate() + '/' + (date.getMonth() + 2) + '/' + date.getFullYear();
-  logger.info(date);
 });
 
 bot.on('message', function (user, userID, channelID, message, evt) {
-  // Our bot needs to know if it will execute a command
-  // It will listen for messages that will start with `!`
   if (message.substring(0, 1) == '!') {
     var args = message.substring(1).split(' ');
     var cmd = args[0];
+    var date = new Date();
+    var players = [];
 
     date = date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear();
-    var players = [];
 
     if (cmd === "e") {
       var emojis = ['', ':one:', ':two:', ':three:', ':four:', ':five:', ':six:', ':seven:', ':eight:', ':nine:', ':keycap_ten:', ':pause_button:'];
@@ -48,7 +44,6 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         players.push(emojis[index] + ' ' + player + '\n');
       }
     });
-
 
     args = args.splice(1);
 
