@@ -29,7 +29,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
     var date = new Date();
     var players = [];
 
-    date = date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear();
+    date = date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear();
 
     if (cmd === "e") {
       var emojis = ['', ':one:', ':two:', ':three:', ':four:', ':five:', ':six:', ':seven:', ':eight:', ':nine:', ':keycap_ten:', ':pause_button:'];
