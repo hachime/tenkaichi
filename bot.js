@@ -54,13 +54,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             to: channelID,
             message: msg + players.join(""),
           });
-
-        case 'r':
-          bot.sendMessage({
-            to: channelID,
-            message: election + players.join(""),
-          });
-          break;
+        break;
       }
     }
   }
